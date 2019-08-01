@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<h2 class='text-center'>{{ object.title }}</h2>
+
+<p class='text-center'>{{ object.content }}</p>
+
+<ul align='center' style="list-style: none;">
+  <li><a href='/blog/{{ object.id }}/update'>update</a></li>
+  <li><a href='/blog/{{ object.id }}/delete'>delete</a></li>
+  <li><a href='/blog'>Back to Story List</a></li>
+</ul>
+{% endblock %}
